@@ -30,3 +30,15 @@
     transform: rotate(360deg);
   }
 }
+
+.box-shadow{
+  box-shadow: -2px 2px 0px 0px #aaaaaa;
+}
+
+.letter-spacing-brand{
+  letter-spacing: 2px;
+}
+
+.padding-list{
+  padding-right: 30px;
+}
