@@ -15,10 +15,11 @@ class App extends Component {
   
   render() {
     return (
+      //di sini background gambar
       <div>
         <Router>
           <div>
-          <nav className="navbar navbar-expand-lg navbar-light">
+          <nav className="navbar navbar-expand-lg navbar-light fixed-top">
               <div className="container">
                 <a className="navbar-brand fw-bold fs-3 text-primary letter-spacing-brand" href="#">ANOA TECH</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +50,7 @@ class App extends Component {
               </div>
             </nav>
             <Routes>
-              <Route path="/" element={<Home KalimatAwal={this.state.kalimat}/>} />
+              <Route path="/" element={<Home KalimatAwal={this.state.kalimat} Logo={logo}/>} />
               <Route path="/about" element={<Home />} />
               <Route path="/service" element={<Home />} />
               <Route path="/blog" element={<Home />} />
