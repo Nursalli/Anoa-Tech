@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import Home from './pages/Home';
+import Background from './background.jpg';
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-      kalimat : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore unde delectus officiis. Voluptate, expedita, temporibus debitis iure sed quas magnam at qui maiores ratione similique laudantium doloribus reprehenderit alias. Eligendi.",
-    }
-  }
-  
   render() {
     return (
       //di sini background gambar
       <div>
         <Router>
-          <div>
-          <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+          <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+          <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container">
                 <a className="navbar-brand fw-bold fs-3 text-primary letter-spacing-brand" href="#">ANOA TECH</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +43,7 @@ class App extends Component {
               </div>
             </nav>
             <Routes>
-              <Route path="/" element={<Home KalimatAwal={this.state.kalimat} Logo={logo}/>} />
+              <Route path="/" element={<Home />} />
               <Route path="/about" element={<Home />} />
               <Route path="/service" element={<Home />} />
               <Route path="/blog" element={<Home />} />
