@@ -9,47 +9,47 @@ const layer2 = (props) => {
             </div>
             <div className="row">
                 <div className="col-md-4 mb-4 text-center">
-                    <div className="card shadow">
-                        <img src={props.Logo} className="card-img-top" alt={"Gambar Card"} />
+                    <div className="card shadow p-3">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <i class="fa-solid fa-laptop-code text-danger fa-4x mb-4"></i>
+                            <h5 className="card-title">{ props.Card[0]['title'] }</h5>
+                            <p className="card-text">{ props.Card[0]['desc'] }</p>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4 mb-4 text-center">
-                    <div className="card shadow">
-                        <img src={props.Logo} className="card-img-top" alt={"Gambar Card"} />
+                    <div className="card shadow p-3">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <i class="fa-solid fa-screwdriver-wrench text-success fa-4x mb-4"></i>
+                            <h5 className="card-title">{ props.Card[1]['title'] }</h5>
+                            <p className="card-text">{ props.Card[1]['desc'] }</p>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4 mb-4 text-center">
-                    <div className="card shadow">
-                        <img src={props.Logo} className="card-img-top" alt={"Gambar Card"} />
+                    <div className="card shadow p-3">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <i class="fa-solid fa-shield text-primary fa-4x mb-4"></i>
+                            <h5 className="card-title">{ props.Card[2]['title'] }</h5>
+                            <p className="card-text">{ props.Card[2]['desc'] }</p>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4 mb-4 offset-md-2 text-center">
-                    <div className="card shadow">
-                        <img src={props.Logo} className="card-img-top" alt={"Gambar Card"} />
+                    <div className="card shadow p-3">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <i class="fa-solid fa-desktop text-success fa-4x mb-4"></i>
+                            <h5 className="card-title">{ props.Card[3]['title'] }</h5>
+                            <p className="card-text">{ props.Card[3]['desc'] }</p>
                         </div>
                     </div>
                 </div>            
                 <div className="col-md-4 mb-4 text-center">
-                    <div className="card shadow">
-                        <img src={props.Logo} className="card-img-top" alt={"Gambar Card"} />
+                    <div className="card shadow p-3">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <i class="fa-solid fa-users-gear text-warning fa-4x mb-4"></i>
+                            <h5 className="card-title">{ props.Card[4]['title'] }</h5>
+                            <p className="card-text">{ props.Card[4]['desc'] }</p>
                         </div>
                     </div>
                 </div>

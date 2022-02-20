@@ -15,24 +15,13 @@ const layer1 = (props) => {
                 </div>
             </div>
             <div className="row mb-5">
-                <div className="col-md-2 col-6">
-                    <img className="img-fluid" src={props.Icon} style={{ width: "100%", height: "100%" }}/>
-                </div>
-                <div className="col-md-2 col-6">
-                    <img className="img-fluid" src={props.Icon} style={{ width: "100%", height: "100%" }}/>
-                </div>
-                <div className="col-md-2 col-6">
-                    <img className="img-fluid" src={props.Icon} style={{ width: "100%", height: "100%" }}/>
-                </div>
-                <div className="col-md-2 col-6">
-                    <img className="img-fluid" src={props.Icon} style={{ width: "100%", height: "100%" }}/>
-                </div>
-                <div className="col-md-2 col-6">
-                    <img className="img-fluid" src={props.Icon} style={{ width: "100%", height: "100%" }}/>
-                </div>
-                <div className="col-md-2 col-6">
-                    <img className="img-fluid" src={props.Icon} style={{ width: "100%", height: "100%" }}/>
-                </div>
+            {
+                props.Icon.map(data =>
+                    <div className="col-md-2 col-6" key={data.id}>
+                        <img className="img-fluid" src={data.icon} style={{ width: "100%", height: "100%" }}/>
+                    </div>         
+                )
+            }
             </div>
         </div>
     );
